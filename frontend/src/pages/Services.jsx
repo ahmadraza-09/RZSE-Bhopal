@@ -1,10 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import SEO from "../components/SEO";
 import { services } from "../data/mockData";
 import * as Icons from "lucide-react";
 
 const Services = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <SEO
@@ -75,13 +77,12 @@ const Services = () => {
                         View Details
                         <ArrowRight className="ml-1 w-4 h-4" />
                       </span>
-                      <Link
-                        to="/book-service"
+                      <button
+                        onClick={() => navigate("/book-service")}
                         className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
-                        onClick={(e) => e.stopPropagation()}
                       >
                         Book Now
-                      </Link>
+                      </button>
                     </div>
                   </div>
                 </Link>
