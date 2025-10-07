@@ -266,11 +266,12 @@ const Home = () => {
             {brands.map((brand, index) => (
               <div
                 key={index}
-                className="bg-gray-50 p-6 rounded-xl flex items-center justify-center hover:shadow-lg transition-shadow"
+                className="bg-gray-50 p-6 rounded-xl flex items-center justify-center gap-2 hover:shadow-lg transition-shadow"
               >
-                <span className="text-xl font-bold text-gray-700">
+                <img src={brand.logo} alt="" className="h-6" />
+                {/* <span className="text-xl font-bold text-gray-700">
                   {brand.name}
-                </span>
+                </span> */}
               </div>
             ))}
           </div>

@@ -511,12 +511,12 @@ Regular cleaning takes just 10 minutes and can add years to your microwave's lif
 ];
 
 export const brands = [
-    { name: 'LG', logo: 'https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&w=200' },
-    { name: 'Samsung', logo: 'https://images.pexels.com/photos/1476321/pexels-photo-1476321.jpeg?auto=compress&cs=tinysrgb&w=200' },
-    { name: 'Whirlpool', logo: 'https://images.pexels.com/photos/2343468/pexels-photo-2343468.jpeg?auto=compress&cs=tinysrgb&w=200' },
-    { name: 'Sony', logo: 'https://images.pexels.com/photos/5721908/pexels-photo-5721908.jpeg?auto=compress&cs=tinysrgb&w=200' },
-    { name: 'Voltas', logo: 'https://images.pexels.com/photos/7512536/pexels-photo-7512536.jpeg?auto=compress&cs=tinysrgb&w=200' },
-    { name: 'Godrej', logo: 'https://images.pexels.com/photos/2343467/pexels-photo-2343467.jpeg?auto=compress&cs=tinysrgb&w=200' }
+    { name: 'LG', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/LG_logo_%282014%29.svg/1200px-LG_logo_%282014%29.svg.png?auto=compress&cs=tinysrgb&w=200' },
+    { name: 'Samsung', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/61/Samsung_old_logo_before_year_2015.svg?auto=compress&cs=tinysrgb&w=200' },
+    { name: 'Whirlpool', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Whirlpool_Corporation_Logo_%28as_of_2017%29.svg?auto=compress&cs=tinysrgb&w=200' },
+    { name: 'Sony', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sony_logo.svg/1280px-Sony_logo.svg.png?auto=compress&cs=tinysrgb&w=200' },
+    { name: 'Voltas', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Voltas_logo.svg/2560px-Voltas_logo.svg.png?auto=compress&cs=tinysrgb&w=200' },
+    { name: 'Godrej', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Godrej_Logo.svg/2560px-Godrej_Logo.svg.png?auto=compress&cs=tinysrgb&w=200' }
 ];
 
 export const teamMembers = [

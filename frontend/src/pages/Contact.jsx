@@ -270,7 +270,7 @@ const Contact = () => {
 
               <div className="mt-8 rounded-xl overflow-hidden shadow-lg">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.9373093478657!2d72.8776559!3d19.0759899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2630.2831403451632!2d77.43251537351591!3d23.237046608293923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c4319680c5e3d%3A0x506dd3b1b9b53bce!2sRepair%20zone%20service%20expert!5e1!3m2!1sen!2sin!4v1759858516119!5m2!1sen!2sin"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
