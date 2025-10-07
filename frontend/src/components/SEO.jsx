@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 const SEO = ({ title, description, keywords, image, url }) => {
   const siteName = "HomeFixPro - Appliance Repair Services";
