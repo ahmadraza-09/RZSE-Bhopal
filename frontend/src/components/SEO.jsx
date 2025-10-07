@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet";
 
 const SEO = ({ title, description, keywords, image, url }) => {
-  const siteName = "HomeFixPro - Appliance Repair Services";
+  const siteName =
+    "Repair Zone Service Expert - Get Expert Professional Services at Home";
   const fullTitle = `${title} | ${siteName}`;
   const defaultImage =
     "https://images.pexels.com/photos/7512536/pexels-photo-7512536.jpeg?auto=compress&cs=tinysrgb&w=1200";

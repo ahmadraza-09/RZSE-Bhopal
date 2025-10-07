@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="Home"
+        title="Repair Zone Service Expert - Get Expert Professional Services at Home"
         description="Professional home appliance repair services for AC, refrigerator, washing machine, microwave, and more. Fast, reliable, and affordable repairs at your doorstep."
         keywords="appliance repair, AC repair, fridge repair, washing machine repair, home services"
       />
