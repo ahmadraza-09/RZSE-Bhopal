@@ -21,26 +21,78 @@ function App() {
     <AdminAuthProvider>
       <Router>
         <Routes>
+          {/* Public Route */}
           <Route path="/login" element={<Login />} />
 
+          {/* Protected Admin Routes */}
           <Route
-            path="/admin/*"
+            path="/admin"
             element={
               <ProtectedRoute>
-                <Routes>
-                  <Route path="/" element={<Dashboard />} />
-                  <Route path="/bookings" element={<Bookings />} />
-                  <Route path="/services" element={<Services />} />
-                  <Route path="/testimonials" element={<Testimonials />} />
-                  <Route path="/customers" element={<Customers />} />
-                  <Route path="/blog" element={<Blog />} />
-                  <Route path="/settings" element={<Settings />} />
-                  <Route path="/contact" element={<Contact />} />
-                  <Route path="*" element={<Navigate to="/admin" replace />} />
-                </Routes>
+                <Dashboard />
               </ProtectedRoute>
             }
           />
+          <Route
+            path="/admin/bookings"
+            element={
+              <ProtectedRoute>
+                <Bookings />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/services"
+            element={
+              <ProtectedRoute>
+                <Services />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/testimonials"
+            element={
+              <ProtectedRoute>
+                <Testimonials />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/customers"
+            element={
+              <ProtectedRoute>
+                <Customers />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/blog"
+            element={
+              <ProtectedRoute>
+                <Blog />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/settings"
+            element={
+              <ProtectedRoute>
+                <Settings />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/contact"
+            element={
+              <ProtectedRoute>
+                <Contact />
+              </ProtectedRoute>
+            }
+          />
+
+          {/* Redirect unknown routes */}
+          <Route path="/" element={<Navigate to="/admin" replace />} />
+          <Route path="*" element={<Navigate to="/admin" replace />} />
         </Routes>
       </Router>
     </AdminAuthProvider>
