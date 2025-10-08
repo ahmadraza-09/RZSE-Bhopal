@@ -25,9 +25,9 @@ const Blog = () => {
   return (
     <>
       <SEO
-        title="Blog"
-        description="Read our latest articles on appliance maintenance tips, energy saving guides, DIY repairs, and expert advice for keeping your home appliances running smoothly."
-        keywords="appliance tips, maintenance guide, energy saving, DIY repair, home appliance blog"
+        title="Repair Zone Service Expert Bhopal Blog - Appliance Tips & Repair Guides"
+        description="Read our latest articles in MP Nagar, Bhopal on appliance maintenance tips, energy saving guides, DIY repairs, and expert advice for keeping your home appliances running smoothly."
+        keywords="Bhopal appliance tips, maintenance guide Bhopal, energy saving Bhopal, DIY repair Bhopal, home appliance blog Bhopal"
       />
 
       <section className="pt-24 pb-12 bg-gradient-to-br from-blue-600 to-blue-800 text-white">

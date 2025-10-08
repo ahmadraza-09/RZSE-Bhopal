@@ -178,7 +178,132 @@ export const services = [
             { question: 'Do you repair Smart TV software issues?', answer: 'Yes, we handle firmware updates, app issues, and connectivity problems.' },
             { question: 'What TV brands do you service?', answer: 'We service all brands including Samsung, LG, Sony, Mi, OnePlus, and more.' }
         ]
-    }
+    },
+    {
+        id: '7',
+        name: 'Geyser Repair',
+        slug: 'geyser-repair',
+        description: 'Expert geyser repair and installation services for instant and storage water heaters.',
+        detailed_description: 'Our certified technicians repair all types of geysers including electric, gas, and instant water heaters. We handle no hot water, leakage, thermostat issues, and installation services for all brands.',
+        image_url: 'https://nicholson-hvac.com/wp-content/uploads/2022/10/Boiler-System-Technician-Repair-Replacement-Image.jpg',
+        icon: 'Zap',
+        starting_price: 499,
+        features: [
+            'Leakage repair',
+            'Thermostat replacement',
+            'Heating element repair',
+            'Gas burner repair',
+            'Installation & maintenance',
+            '60-day warranty'
+        ],
+        process_steps: [
+            { step: 1, title: 'Request Service', description: 'Book online or call us' },
+            { step: 2, title: 'Diagnosis', description: 'Technician inspects the geyser' },
+            { step: 3, title: 'Estimate', description: 'Transparent pricing with no hidden charges' },
+            { step: 4, title: 'Fix', description: 'Repair using genuine parts' },
+            { step: 5, title: 'Demo', description: 'Testing and demonstration after repair' }
+        ],
+        faqs: [
+            { question: 'Do you repair instant water heaters?', answer: 'Yes, we repair both instant and storage geysers.' },
+            { question: 'Do you provide installation service?', answer: 'Yes, we install new geysers at your location.' },
+            { question: 'Which brands do you service?', answer: 'We service Havells, Racold, Bajaj, AO Smith, Crompton, and all major brands.' }
+        ]
+    },
+    {
+        id: '8',
+        name: 'Kitchen Chimney Service',
+        slug: 'kitchen-chimney-service',
+        description: 'Professional kitchen chimney cleaning, installation, and repair services.',
+        detailed_description: 'We clean and repair all types of kitchen chimneys including wall-mounted, island, and built-in models. Services include motor repair, filter cleaning, smoke suction issues, and new installations.',
+        image_url: 'https://www.jagranimages.com/images/newimg/17042024/17_04_2024-kitchen_1200_23699138.webp',
+        icon: 'AirVent',
+        starting_price: 399,
+        features: [
+            'Motor repair',
+            'Filter replacement',
+            'Smoke suction improvement',
+            'Installation & maintenance',
+            'Cleaning & degreasing',
+            '60-day warranty'
+        ],
+        process_steps: [
+            { step: 1, title: 'Request Service', description: 'Book online or call us' },
+            { step: 2, title: 'Inspection', description: 'Technician checks motor and filters' },
+            { step: 3, title: 'Estimate', description: 'Transparent pricing with no hidden charges' },
+            { step: 4, title: 'Repair / Clean', description: 'Service performed using genuine parts' },
+            { step: 5, title: 'Demo', description: 'Testing and demonstration after service' }
+        ],
+        faqs: [
+            { question: 'Do you clean grease filters?', answer: 'Yes, we thoroughly clean and degrease all filters.' },
+            { question: 'Do you repair chimney motors?', answer: 'Yes, we repair or replace faulty motors.' },
+            { question: 'Which brands do you service?', answer: 'We service Faber, Elica, Glen, Hindware, and all major chimney brands.' }
+        ]
+    },
+    {
+        id: '9',
+        name: 'RO Water Purifier Service',
+        slug: 'ro-water-purifier-service',
+        description: 'Expert RO water purifier installation, repair, and maintenance services.',
+        detailed_description: 'We repair and maintain all RO water purifiers. Services include membrane replacement, filter cleaning, leakage fixing, low water pressure issues, and new installations for brands like Kent, Aquaguard, Livpure, and Eureka Forbes.',
+        image_url: 'https://uvwater.biz/wp-content/uploads/2019/11/Filter-Service-AMC-min.jpg',
+        icon: 'Droplet',
+        starting_price: 299,
+        features: [
+            'Filter replacement',
+            'RO membrane repair',
+            'Leakage fixing',
+            'Installation & maintenance',
+            'Water quality check',
+            '60-day warranty'
+        ],
+        process_steps: [
+            { step: 1, title: 'Request Service', description: 'Book online or call us' },
+            { step: 2, title: 'Inspection', description: 'Technician checks purifier and water flow' },
+            { step: 3, title: 'Estimate', description: 'Transparent pricing with no hidden charges' },
+            { step: 4, title: 'Fix / Replace', description: 'Repair or replace faulty parts' },
+            { step: 5, title: 'Demo', description: 'Ensure purified water is clean and safe' }
+        ],
+        faqs: [
+            { question: 'Do you replace RO membranes?', answer: 'Yes, we replace membranes and all filters.' },
+            { question: 'Do you provide installation service?', answer: 'Yes, new RO purifiers are installed at home.' },
+            { question: 'Which brands do you service?', answer: 'We service Kent, Aquaguard, Livpure, Eureka Forbes, and all major brands.' }
+        ]
+    },
+    {
+        id: '10',
+        name: 'Plumber Services',
+        slug: 'plumber-services',
+        description: 'Professional plumbing services for homes in Hadapsar, Pune. Leakage repair, pipe replacement, and more.',
+        detailed_description: 'We provide expert plumbing solutions including leak repairs, pipe replacements, bathroom & kitchen fittings, water pump installation, and drainage unclogging. Our licensed plumbers ensure reliable and timely service.',
+        image_url: 'https://rapidrepairs247.com/wp-content/uploads/2024/04/Toilet-Repair-1.jpeg',
+        icon: 'HardHat',
+        starting_price: 399,
+        features: [
+            'Leak detection & repair',
+            'Pipe replacement',
+            'Faucet & tap repair',
+            'Drain cleaning',
+            'Water pump installation',
+            '60-day warranty'
+        ],
+        process_steps: [
+            { step: 1, title: 'Request Service', description: 'Book online or call us' },
+            { step: 2, title: 'Inspection', description: 'Plumber inspects the issue' },
+            { step: 3, title: 'Estimate', description: 'Transparent pricing with no hidden charges' },
+            { step: 4, title: 'Repair', description: 'Fix using genuine parts and tools' },
+            { step: 5, title: 'Demo', description: 'Check for leaks and proper functioning' }
+        ],
+        faqs: [
+            { question: 'Do you fix leaking taps?', answer: 'Yes, all types of tap and faucet leaks are repaired.' },
+            { question: 'Do you replace old pipes?', answer: 'Yes, we replace old or damaged plumbing pipes.' },
+            { question: 'Do you provide emergency plumbing service?', answer: 'Yes, emergency plumbing support is available in Hadapsar, Pune.' }
+        ]
+    },
+
+
+
+
+
 ];
 
 export const testimonials = [

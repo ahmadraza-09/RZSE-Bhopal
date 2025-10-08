@@ -166,9 +166,9 @@ const BookService = () => {
   return (
     <>
       <SEO
-        title="Book Service"
-        description="Book your home appliance repair service online. Fast, easy, and convenient booking with expert technicians."
-        keywords="book service, appliance repair booking, schedule repair"
+        title="Repair Zone Service Expert - Book Appliance Repair in MP Nagar, Bhopal"
+        description="Book your home appliance repair service online in MP Nagar, Bhopal with Repair Zone Service Expert. Fast, reliable, and convenient booking with certified technicians."
+        keywords="Repair Zone Service Expert, appliance repair booking Bhopal, book service MP Nagar, AC repair, fridge repair, washing machine repair"
       />
 
       <section className="pt-24 pb-12 bg-gradient-to-br from-blue-600 to-blue-800 text-white">

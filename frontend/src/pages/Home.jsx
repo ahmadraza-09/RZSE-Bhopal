@@ -20,9 +20,9 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="Repair Zone Service Expert - Get Expert Professional Services at Home"
-        description="Professional home appliance repair services for AC, refrigerator, washing machine, microwave, and more. Fast, reliable, and affordable repairs at your doorstep."
-        keywords="appliance repair, AC repair, fridge repair, washing machine repair, home services"
+        title="Repair Zone Service Expert in Bhopal - Get Professional Home Services"
+        description="Professional home appliance repair services in MP Nagar, Bhopal for AC, refrigerator, washing machine, microwave, and more. Fast, reliable, and affordable repairs at your doorstep."
+        keywords="appliance repair Bhopal, AC repair Bhopal, fridge repair Bhopal, washing machine repair Bhopal, home services Bhopal, MP Nagar Bhopal"
       />
 
       {/* Hero Section */}

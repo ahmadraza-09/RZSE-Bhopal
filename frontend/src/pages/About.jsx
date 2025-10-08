@@ -7,9 +7,9 @@ const About = () => {
   return (
     <>
       <SEO
-        title="About Us"
-        description="Learn about HomeFixPro - your trusted partner for home appliance repairs with 15+ years of experience, certified technicians, and 50,000+ satisfied customers."
-        keywords="about us, appliance repair company, certified technicians, home services"
+        title="About Repair Zone Service Expert Bhopal - Trusted Appliance Repair Experts"
+        description="Learn about Repair Zone Service Expert in MP Nagar, Bhopal - your trusted partner for home appliance repairs with 15+ years of experience, certified technicians, and 50,000+ satisfied customers."
+        keywords="about us Bhopal, appliance repair company Bhopal, certified technicians Bhopal, home services Bhopal"
       />
 
       <section className="pt-24 pb-12 bg-gradient-to-br from-blue-600 to-blue-800 text-white">

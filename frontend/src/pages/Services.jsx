@@ -10,9 +10,9 @@ const Services = () => {
   return (
     <>
       <SEO
-        title="Our Services"
-        description="Comprehensive home appliance repair services including AC, refrigerator, washing machine, microwave, TV, and cooler repairs. Expert technicians at your service."
-        keywords="appliance repair services, AC repair, refrigerator repair, washing machine repair, microwave repair, TV repair"
+        title="Repair Zone Service Expert - Appliance Repair Services in MP Nagar, Bhopal"
+        description="Comprehensive home appliance repair services in MP Nagar, Bhopal including AC, refrigerator, washing machine, microwave, TV, geyser, RO, and chimney repairs. Expert technicians at your service."
+        keywords="appliance repair MP Nagar, AC repair Bhopal, refrigerator repair Bhopal, washing machine repair Bhopal, microwave repair, TV repair, geyser repair, RO service, chimney service"
       />
 
       <section className="pt-24 pb-12 bg-gradient-to-br from-blue-600 to-blue-800 text-white">

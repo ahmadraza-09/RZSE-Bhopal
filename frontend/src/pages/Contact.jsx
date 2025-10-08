@@ -29,9 +29,9 @@ const Contact = () => {
   return (
     <>
       <SEO
-        title="Contact Us"
-        description="Get in touch with HomeFixPro for all your appliance repair needs. Call us, email us, or visit our office. We're here to help 24/7."
-        keywords="contact, customer support, appliance repair contact, service inquiry"
+        title="Repair Zone Service Expert - Contact Us in MP Nagar, Bhopal"
+        description="Get in touch with Repair Zone Service Expert in MP Nagar, Bhopal for all your appliance repair needs. Call, email, or visit us. We're here to help 24/7."
+        keywords="Repair Zone Service Expert, contact Bhopal, appliance repair contact, customer support MP Nagar, service inquiry"
       />
 
       <section className="pt-24 pb-12 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
