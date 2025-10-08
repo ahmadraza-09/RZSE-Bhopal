@@ -55,10 +55,10 @@ const Contact = () => {
                 Available 24/7 for emergencies
               </p>
               <a
-                href="tel:+919876543210"
+                href="tel:+919522675728"
                 className="text-blue-600 font-semibold text-lg hover:underline"
               >
-                +91 98765 43210
+                +91 95226 75728
               </a>
             </div>
 
@@ -71,10 +71,10 @@ const Contact = () => {
                 We'll respond within 24 hours
               </p>
               <a
-                href="mailto:info@homefixpro.com"
+                href="mailto:repairzonehomeservice10@gmail.com"
                 className="text-blue-600 font-semibold hover:underline"
               >
-                info@homefixpro.com
+                info@repairzoneservices.com
               </a>
             </div>
 
@@ -85,9 +85,8 @@ const Contact = () => {
               <h3 className="text-xl font-bold text-gray-900 mb-2">Visit Us</h3>
               <p className="text-gray-600 mb-4">Our office location</p>
               <p className="text-gray-700 font-medium">
-                123 Service Street
-                <br />
-                Tech City, IN 400001
+                shop number 225, MP Nagar zone 1, Near Vishal Mega Mart, Zone 8,
+                Bhopal, Madhya Pradesh 462011
               </p>
             </div>
           </div>
@@ -259,7 +258,7 @@ const Contact = () => {
                   assistance.
                 </p>
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.link/8ebs8c"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all"

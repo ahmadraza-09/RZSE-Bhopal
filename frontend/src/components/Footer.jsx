@@ -176,25 +176,26 @@ const Footer = () => {
               <li className="flex items-start space-x-2">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <span className="text-sm">
-                  123 Service Street, Tech City, IN 400001
+                  shop number 225, MP Nagar zone 1, Near Vishal Mega Mart, Zone
+                  8, Bhopal, Madhya Pradesh 462011
                 </span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="w-5 h-5 flex-shrink-0" />
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919522675728"
                   className="text-sm hover:text-blue-400"
                 >
-                  +91 98765 43210
+                  +91 95226 75728
                 </a>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-5 h-5 flex-shrink-0" />
                 <a
-                  href="mailto:info@homefixpro.com"
+                  href="mailto:repairzonehomeservice10@gmail.com"
                   className="text-sm hover:text-blue-400"
                 >
-                  info@homefixpro.com
+                  repairzonehomeservice10@gmail.com
                 </a>
               </li>
             </ul>

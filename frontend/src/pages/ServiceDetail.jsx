@@ -171,11 +171,11 @@ const ServiceDetail = () => {
                   Book Service Now
                 </Link>
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919522675728"
                   className="flex items-center justify-center w-full bg-gray-100 text-gray-900 px-6 py-4 rounded-lg font-semibold hover:bg-gray-200 transition-all"
                 >
                   <Phone className="w-5 h-5 mr-2" />
-                  Call: +91 98765 43210
+                  Call: +91 95226 75728
                 </a>
                 <div className="mt-6 p-4 bg-blue-50 rounded-lg">
                   <p className="text-sm text-gray-700">

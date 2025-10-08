@@ -47,11 +47,11 @@ const Home = () => {
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919522675728"
                   className="inline-flex items-center justify-center bg-blue-800 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-900 transition-all border-2 border-white"
                 >
                   <Phone className="mr-2 w-5 h-5" />
-                  Call: +91 98765 43210
+                  Call: +91 95226 75728
                 </a>
               </div>
               <div className="grid grid-cols-3 gap-6">
@@ -346,7 +346,7 @@ const Home = () => {
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
             <a
-              href="tel:+919876543210"
+              href="tel:+919522675728"
               className="inline-flex items-center justify-center bg-blue-800 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-900 transition-all border-2 border-white"
             >
               <Phone className="mr-2 w-5 h-5" />
