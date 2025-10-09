@@ -116,9 +116,9 @@ const Bookings = () => {
                       <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase">
                         Status
                       </th>
-                      <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase">
+                      {/* <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase">
                         Amount
-                      </th>
+                      </th> */}
                       <th className="px-6 py-4 text-center text-xs font-semibold text-gray-600 uppercase">
                         Actions
                       </th>
@@ -163,9 +163,9 @@ const Bookings = () => {
                             {booking.status}
                           </span>
                         </td>
-                        <td className="px-6 py-4 font-semibold text-gray-900">
+                        {/* <td className="px-6 py-4 font-semibold text-gray-900">
                           ₹{booking.amount}
-                        </td>
+                        </td> */}
                         <td className="px-6 py-4 text-center">
                           <button
                             onClick={() => setSelectedBooking(booking)}

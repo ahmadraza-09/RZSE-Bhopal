@@ -54,6 +54,66 @@ const Services = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  // Features Add/Delete
+  const addFeature = () => {
+    setFormData((prev) => ({
+      ...prev,
+      features: [...prev.features, ""],
+    }));
+  };
+  const updateFeature = (index, value) => {
+    const newFeatures = [...formData.features];
+    newFeatures[index] = value;
+    setFormData((prev) => ({ ...prev, features: newFeatures }));
+  };
+  const removeFeature = (index) => {
+    setFormData((prev) => ({
+      ...prev,
+      features: prev.features.filter((_, i) => i !== index),
+    }));
+  };
+
+  // Process Steps Add/Delete
+  const addProcessStep = () => {
+    setFormData((prev) => ({
+      ...prev,
+      process_steps: [
+        ...prev.process_steps,
+        { step: prev.process_steps.length + 1, title: "", description: "" },
+      ],
+    }));
+  };
+  const updateProcessStep = (index, field, value) => {
+    const newSteps = [...formData.process_steps];
+    newSteps[index][field] = value;
+    setFormData((prev) => ({ ...prev, process_steps: newSteps }));
+  };
+  const removeProcessStep = (index) => {
+    setFormData((prev) => ({
+      ...prev,
+      process_steps: prev.process_steps.filter((_, i) => i !== index),
+    }));
+  };
+
+  // FAQs Add/Delete
+  const addFaq = () => {
+    setFormData((prev) => ({
+      ...prev,
+      faqs: [...prev.faqs, { question: "", answer: "" }],
+    }));
+  };
+  const updateFaq = (index, field, value) => {
+    const newFaqs = [...formData.faqs];
+    newFaqs[index][field] = value;
+    setFormData((prev) => ({ ...prev, faqs: newFaqs }));
+  };
+  const removeFaq = (index) => {
+    setFormData((prev) => ({
+      ...prev,
+      faqs: prev.faqs.filter((_, i) => i !== index),
+    }));
+  };
+
   const handleSave = () => {
     if (editingService) {
       setServiceList((prev) =>
@@ -165,7 +225,7 @@ const Services = () => {
       {/* Modal */}
       {modalOpen && (
         <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-50">
-          <div className="bg-white rounded-lg w-full max-w-2xl p-6 relative overflow-y-auto max-h-[90vh]">
+          <div className="bg-white rounded-lg w-full max-w-3xl p-6 relative overflow-y-auto max-h-[90vh]">
             <button
               onClick={closeModal}
               className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
@@ -178,61 +238,159 @@ const Services = () => {
 
             <div className="space-y-4">
               <input
-                type="text"
                 name="name"
                 placeholder="Service Name"
                 value={formData.name}
                 onChange={handleInputChange}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border rounded-lg px-3 py-2"
               />
               <input
-                type="text"
                 name="slug"
                 placeholder="Slug"
                 value={formData.slug}
                 onChange={handleInputChange}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border rounded-lg px-3 py-2"
               />
               <input
-                type="text"
                 name="description"
                 placeholder="Short Description"
                 value={formData.description}
                 onChange={handleInputChange}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border rounded-lg px-3 py-2"
               />
-              <input
-                type="text"
+              <textarea
                 name="detailed_description"
                 placeholder="Detailed Description"
                 value={formData.detailed_description}
                 onChange={handleInputChange}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border rounded-lg px-3 py-2"
               />
               <input
-                type="text"
                 name="image_url"
                 placeholder="Image URL"
                 value={formData.image_url}
                 onChange={handleInputChange}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border rounded-lg px-3 py-2"
               />
               <input
-                type="text"
                 name="icon"
                 placeholder="Icon Name (e.g., Wind)"
                 value={formData.icon}
                 onChange={handleInputChange}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border rounded-lg px-3 py-2"
               />
               <input
-                type="number"
                 name="starting_price"
+                type="number"
                 placeholder="Starting Price"
                 value={formData.starting_price}
                 onChange={handleInputChange}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border rounded-lg px-3 py-2"
               />
+
+              {/* Features */}
+              <div>
+                <div className="flex justify-between items-center mb-2">
+                  <h3 className="text-lg font-semibold">Features</h3>
+                  <button
+                    onClick={addFeature}
+                    className="text-blue-600 flex items-center gap-1"
+                  >
+                    <Plus size={16} /> Add
+                  </button>
+                </div>
+                {formData.features.map((feature, i) => (
+                  <div key={i} className="flex gap-2 mb-2">
+                    <input
+                      value={feature}
+                      onChange={(e) => updateFeature(i, e.target.value)}
+                      placeholder={`Feature ${i + 1}`}
+                      className="flex-1 border px-2 py-1 rounded"
+                    />
+                    <button
+                      onClick={() => removeFeature(i)}
+                      className="text-red-600"
+                    >
+                      <Trash2 size={16} />
+                    </button>
+                  </div>
+                ))}
+              </div>
+
+              {/* Process Steps */}
+              <div>
+                <div className="flex justify-between items-center mb-2">
+                  <h3 className="text-lg font-semibold">Process Steps</h3>
+                  <button
+                    onClick={addProcessStep}
+                    className="text-blue-600 flex items-center gap-1"
+                  >
+                    <Plus size={16} /> Add
+                  </button>
+                </div>
+                {formData.process_steps.map((step, i) => (
+                  <div key={i} className="mb-3 border p-2 rounded-lg">
+                    <input
+                      value={step.title}
+                      onChange={(e) =>
+                        updateProcessStep(i, "title", e.target.value)
+                      }
+                      placeholder="Step Title"
+                      className="w-full border px-2 py-1 rounded mb-2"
+                    />
+                    <textarea
+                      value={step.description}
+                      onChange={(e) =>
+                        updateProcessStep(i, "description", e.target.value)
+                      }
+                      placeholder="Step Description"
+                      className="w-full border px-2 py-1 rounded"
+                    />
+                    <button
+                      onClick={() => removeProcessStep(i)}
+                      className="text-red-600 mt-1"
+                    >
+                      <Trash2 size={16} />
+                    </button>
+                  </div>
+                ))}
+              </div>
+
+              {/* FAQs */}
+              <div>
+                <div className="flex justify-between items-center mb-2">
+                  <h3 className="text-lg font-semibold">FAQs</h3>
+                  <button
+                    onClick={addFaq}
+                    className="text-blue-600 flex items-center gap-1"
+                  >
+                    <Plus size={16} /> Add
+                  </button>
+                </div>
+                {formData.faqs.map((faq, i) => (
+                  <div key={i} className="mb-3 border p-2 rounded-lg">
+                    <input
+                      value={faq.question}
+                      onChange={(e) => updateFaq(i, "question", e.target.value)}
+                      placeholder="Question"
+                      className="w-full border px-2 py-1 rounded mb-2"
+                    />
+                    <textarea
+                      value={faq.answer}
+                      onChange={(e) => updateFaq(i, "answer", e.target.value)}
+                      placeholder="Answer"
+                      className="w-full border px-2 py-1 rounded"
+                    />
+                    <button
+                      onClick={() => removeFaq(i)}
+                      className="text-red-600 mt-1"
+                    >
+                      <Trash2 size={16} />
+                    </button>
+                  </div>
+                ))}
+              </div>
+
               <button
                 onClick={handleSave}
                 className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
