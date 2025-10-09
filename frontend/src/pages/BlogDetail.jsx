@@ -10,10 +10,30 @@ import {
   Linkedin,
 } from "lucide-react";
 import SEO from "../components/SEO";
-import { blogPosts } from "../data/mockData";
+import { blogPosts as rawPosts } from "../data/mockData";
+
+// ✅ Function to generate slug from title
+const generateSlug = (title) =>
+  title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+
+// ✅ Function to calculate read time
+const calculateReadTime = (content) =>
+  Math.max(Math.ceil((content?.split(" ").length || 0) / 200), 1);
 
 const BlogDetail = () => {
   const { slug } = useParams();
+
+  // Map posts with slug and read_time
+  const blogPosts = rawPosts.map((post) => ({
+    ...post,
+    slug: generateSlug(post.title),
+    read_time: calculateReadTime(post.content),
+  }));
+
+  // ✅ Find the post using the generated slug
   const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) {
@@ -33,7 +53,7 @@ const BlogDetail = () => {
 
   const relatedPosts = blogPosts
     .filter(
-      (p) => p.category === post.category && p.id !== post.id && p.published
+      (p) => p.category === post.category && p.slug !== post.slug && p.published
     )
     .slice(0, 3);
 
@@ -71,11 +91,6 @@ const BlogDetail = () => {
 
           <div className="flex flex-wrap items-center gap-6 mb-8 text-gray-600">
             <div className="flex items-center space-x-3">
-              <img
-                src={post.author_image}
-                alt={post.author_name}
-                className="w-12 h-12 rounded-full object-cover"
-              />
               <div>
                 <div className="flex items-center space-x-1">
                   <User className="w-4 h-4" />
@@ -174,23 +189,16 @@ const BlogDetail = () => {
           </div>
 
           <div className="mt-12 pt-8 border-t">
-            <div className="bg-gray-50 rounded-xl p-6 flex items-start space-x-4">
-              <img
-                src={post.author_image}
-                alt={post.author_name}
-                className="w-16 h-16 rounded-full object-cover"
-              />
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  About {post.author_name}
-                </h3>
-                <p className="text-gray-700">
-                  Expert writer and technician with years of experience in home
-                  appliance repair and maintenance. Passionate about sharing
-                  knowledge to help homeowners keep their appliances running
-                  smoothly.
-                </p>
-              </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                About {post.author_name}
+              </h3>
+              <p className="text-gray-700">
+                Expert writer and technician with years of experience in home
+                appliance repair and maintenance. Passionate about sharing
+                knowledge to help homeowners keep their appliances running
+                smoothly.
+              </p>
             </div>
           </div>
         </div>
@@ -205,7 +213,7 @@ const BlogDetail = () => {
             <div className="grid md:grid-cols-3 gap-8">
               {relatedPosts.map((relatedPost) => (
                 <Link
-                  key={relatedPost.id}
+                  key={relatedPost.slug}
                   to={`/blog/${relatedPost.slug}`}
                   className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
                 >
